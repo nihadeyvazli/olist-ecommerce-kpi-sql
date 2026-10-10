@@ -1,24 +1,6 @@
 # End-to-End KPI Framework for E-Commerce Operations (SQL)
 
 **Dataset:** [Olist Brazilian E-Commerce (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). I used 7 of its 9 CSV files.
-**Tools:** SQLite for all KPI logic, pandas + matplotlib only to show results and draw the charts.
-
-## Project files
-
-```
-data/                      7 source CSV files (not in the repo, see "How to run")
-images/                    ER diagram + 3 charts
-olist_kpi_framework.ipynb  runs the whole pipeline
-queries.sql                DDL + Q1-Q10 + bonus queries, commented
-olist_kpi.db               SQLite database (created by the notebook)
-note.md                    this file
-```
-
-**How to run:** the CSV files and the database are not uploaded, because they are too large for GitHub. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), put these 7 files into a `data/` folder next to the notebook, and run all cells. The notebook creates `olist_kpi.db` by itself.
-
-`olist_customers_dataset.csv`, `olist_orders_dataset.csv`, `olist_order_items_dataset.csv`, `olist_order_reviews_dataset.csv`, `olist_products_dataset.csv`, `olist_sellers_dataset.csv`, `product_category_name_translation.csv`
-
-The SQL is written only once, in `queries.sql`. The notebook loads it with `load_queries()` and runs each block by its header name (for example `pd.read_sql(queries["Q4"], conn)`).
 
 ## ER sketch and keys
 
