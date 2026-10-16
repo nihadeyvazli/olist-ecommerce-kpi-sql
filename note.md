@@ -86,7 +86,7 @@ Across the 52 categories with 100+ orders, **r = -0.58**: categories that delive
 - **B2 on-time rate:** 93.22% of orders arrived on or before the estimated date. On-time orders score 4.29, late orders 2.27.
 - **B3 no review (anti-join):** 768 of 99,441 orders (0.77%) never got a review. For delivered orders it is 646 (0.67%).
 - **B4 freight / revenue:** 8 of 52 categories have freight of 25% or more of item revenue (flag "shipping erodes margin"). The highest is `christmas_supplies` at 36.52%.
-- **B5 share of monthly revenue:** `SUM() OVER (PARTITION BY month)` plus `LAG()` for the month-to-month change. `health_beauty` grew from about 6-9% in 2017 to 14.24% in 2018-08. `computers_accessories` peaked at 12.12% in 2018-02 and then fell to about 4.8%.
+- **B5 share of monthly revenue:** `SUM() OVER (PARTITION BY month)` plus `LAG()` for the month-to-month change. `health_beauty` grew from about 6-11% in 2017 to 14.24% in 2018-08. `computers_accessories` peaked at 12.12% in 2018-02 and then fell to about 4.8%.
 
 ## 5 operational insights
 
